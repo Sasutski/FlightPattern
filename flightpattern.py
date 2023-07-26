@@ -134,8 +134,8 @@ class AttractionPoint:
 # Function to display the predator
 def display_predator(stdscr, x, y):
     try:
-        stdscr.addstr(int(y), int(x), 'PP', curses.color_pair(3))
-        stdscr.addstr(int(y) + 1, int(x), 'PP', curses.color_pair(3))
+        stdscr.addstr(int(y), int(x), '//', curses.color_pair(3))
+        stdscr.addstr(int(y) + 1, int(x), '//', curses.color_pair(3))
     except curses.error:
         pass
 
